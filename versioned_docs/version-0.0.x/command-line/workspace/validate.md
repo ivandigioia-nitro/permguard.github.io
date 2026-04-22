@@ -9,7 +9,7 @@ description: Command reference for the `validate` command of the Permguard CLI.
 Using the `validate` command, it is possible to validate the local state for consistency and correctness.
 
 ```text
- Usage:
+Usage:
   permguard validate [flags]
 
 Flags:

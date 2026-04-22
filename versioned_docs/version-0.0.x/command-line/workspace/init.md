@@ -64,6 +64,7 @@ permguard init --language cedar --template default
   <summary>
     JSON Output
   </summary>
+
 ```bash
 permguard init --output json
 ```
@@ -73,10 +74,7 @@ output:
 ```json
 {
   "workspace": {
-    "policy_engine": {
-      "language": "cedar"
-    },
-    "root": "/Users/nicolagallo/source/nitro/permguard-workspace/ledgers/playground-cedar"
+    "root": "/path/to/workspace"
   }
 }
 ```

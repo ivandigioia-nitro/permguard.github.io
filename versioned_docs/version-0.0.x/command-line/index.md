@@ -38,6 +38,7 @@ Available Commands:
   refresh     Scan source files in the current workspace and synchronizes the local state
   remote      Manage remote server for tracking and interaction
   validate    Validate the local state for consistency and correctness
+  version     Show the version details
 
 Flags:
   -h, --help                     help for permguard

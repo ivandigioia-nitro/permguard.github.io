@@ -16,10 +16,10 @@ Usage:
   permguard zones [command]
 
 Available Commands:
-  create      Create a zone
-  delete      Delete a zone
-  list        List zones
-  update      Update a zone
+  create      Create a remote zone
+  delete      Delete a remote zone
+  list        List remote zones
+  update      Update a remote zone
 
 Flags:
   -h, --help   help for zones
@@ -217,3 +217,9 @@ output:
 ```
 
 </details>
+
+The `--page` and `--size` flags can be used to paginate the results.
+
+```bash
+permguard zones list --page 2 --size 50
+```

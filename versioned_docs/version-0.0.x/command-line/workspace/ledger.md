@@ -10,7 +10,7 @@ Using the `ledger` command, it is possible to manage locally checked out ledgers
 
 ```text
 Usage:
-  permguard ledgers [flags]
+  permguard ledger [flags]
 
 Flags:
   -h, --help   help for ledger
@@ -33,10 +33,10 @@ The output from your current version of Permguard may differ from the example pr
 
 ## Get All Ledgers
 
-The `permguard ledgers` command allows for the retrieval of all locally checked out ledgers.
+The `permguard ledger` command allows for the retrieval of all locally checked out ledgers.
 
 ```bash
-permguard ledgers
+permguard ledger
 ```
 
 output:
@@ -54,7 +54,7 @@ Your workspace configured ledgers:
   </summary>
 
 ```bash
-permguard ledgers --output json
+permguard ledger --output json
 ```
 
 output:
@@ -66,7 +66,7 @@ output:
       "is_head": true,
       "ref": "refs/remotes/origin/273165098782/fd1ac44e4afa4fc4beec622494d3175a",
       "ledger_id": "fd1ac44e4afa4fc4beec622494d3175a",
-      "ledger_uri": "origin/273165098782/branches"
+      "ledger_uri": "origin/273165098782/root"
     }
   ]
 }

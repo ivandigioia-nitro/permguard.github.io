@@ -111,8 +111,14 @@ output:
   ]
 }
 ```
-
 </details>
+
+### Additional flags:
+
+| Flag         | Description                                                |
+| ------------ | ---------------------------------------------------------- |
+| `--pap int`  | specify the port number for the PAP (default 9092)         |
+| `--zap int`  | specify the port number for the ZAP (default 9091)         |
 
 ## Get All Remotes
 
@@ -149,11 +155,24 @@ output:
       "zap_server": "localhost",
       "pap_port": 9092,
       "pap_server": "localhost",
-      "remote": "origin",
-      "scheme": "grpc"
+      "remote": "origin"
     }
   ]
 }
 ```
 
 </details>
+
+## Remove a Remote
+
+The `permguard remote remove` command allows to remove a remote server from the workspace configuration.
+
+```bash
+permguard remote remove origin
+```
+
+output:
+
+```bash
+Remote origin has been removed.
+```

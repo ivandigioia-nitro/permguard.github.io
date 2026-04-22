@@ -31,7 +31,7 @@ Global Flags:
 The output from your current version of Permguard may differ from the example provided on this page.
 :::
 
-<!-- updated: OID example values changed from hex SHA256 to CIDv1 (dag-cbor, sha2-256) format -->
+<!-- updated: commit format changed from single tree CID to profiles array + manifest CID -->
 
 ## Show the History
 
@@ -47,15 +47,21 @@ output:
 Your workspace history head/273165098782/fd1ac44e4afa4fc4beec622494d3175a:
 
 commit bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4:
-  - tree: bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu
+  - profiles:
+    - ztas_app/: bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu
+  - manifest: bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy
   - Committer date: 2024-12-24 16:51:57 +0100 CET
   - Author date: 2024-12-24 16:51:57 +0100 CET
 commit bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety:
-  - tree: bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri
+  - profiles:
+    - ztas_app/: bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri
+  - manifest: bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy
   - Committer date: 2024-12-24 16:50:04 +0100 CET
   - Author date: 2024-12-24 16:50:04 +0100 CET
 commit bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote:
-  - tree: bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu
+  - profiles:
+    - ztas_app/: bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu
+  - manifest: bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy
   - Committer date: 2024-12-24 16:48:58 +0100 CET
   - Author date: 2024-12-24 16:48:58 +0100 CET
 
@@ -77,34 +83,52 @@ output:
 {
   "commits": [
     {
+      "oid": "bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4",
+      "predecessor": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
+      "profiles": [
+        {
+          "key": "ztas_app/",
+          "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
+        }
+      ],
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "author": "",
       "author_timestamp": "2024-12-24T16:51:57+01:00",
       "committer": "",
-      "committer_timestamp": "2024-12-24T16:51:57+01:00",
-      "message": "",
-      "oid": "bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4",
-      "parent": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
-      "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
+      "committer_timestamp": "2024-12-24T16:51:57+01:00"
     },
     {
+      "oid": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
+      "predecessor": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
+      "profiles": [
+        {
+          "key": "ztas_app/",
+          "tree": "bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri"
+        }
+      ],
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "author": "",
       "author_timestamp": "2024-12-24T16:50:04+01:00",
       "committer": "",
-      "committer_timestamp": "2024-12-24T16:50:04+01:00",
-      "message": "",
-      "oid": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
-      "parent": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
-      "tree": "bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri"
+      "committer_timestamp": "2024-12-24T16:50:04+01:00"
     },
     {
+      "oid": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
+      "predecessor": "bafyreiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "profiles": [
+        {
+          "key": "ztas_app/",
+          "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
+        }
+      ],
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "author": "",
       "author_timestamp": "2024-12-24T16:48:58+01:00",
       "committer": "",
-      "committer_timestamp": "2024-12-24T16:48:58+01:00",
-      "message": "",
-      "oid": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
-      "parent": "bafyreiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
+      "committer_timestamp": "2024-12-24T16:48:58+01:00"
     }
   ]
 }

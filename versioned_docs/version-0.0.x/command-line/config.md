@@ -8,10 +8,10 @@ description: Command reference for the `config` command of the Permguard CLI.
 
 Using the `config` command, it is possible to manage the CLI configurations.
 
-The configuration file is stored in `~/.permguard/config.toml`.
+The configuration file is stored in `/home/user/.permguard/config.toml`.
 
 ```text
- Usage:
+Usage:
   permguard config [flags]
   permguard config [command]
 
@@ -53,7 +53,7 @@ permguard config reset
 output:
 
 ```bash
- The cli config file ~/.permguard/config.toml has been reset.
+ The cli config file /home/user/.permguard/config.toml has been reset.
 ```
 
 <details>
@@ -68,7 +68,7 @@ output:
 ```json
 {
   "cli": {
-    "config_file": "~/.permguard/config.toml"
+    "config_file": "/home/user/.permguard/config.toml"
   }
 }
 ```
@@ -85,15 +85,14 @@ permguard config show
 
 output:
 
-<!-- updated: added notp.max-packet-size to match source code config show output -->
+<!-- updated: added notp-max-packet-size to match source code config show output -->
 
 ```bash
-endpoints.zap: grpc://localhost:9091
-endpoints.pap: grpc://localhost:9092
-endpoints.pdp: grpc://localhost:9094
-language: cedar
-authstar.max-object-size: 5242880
-notp.max-packet-size: 16777216
+zap-endpoint: grpc://localhost:9091
+pap-endpoint: grpc://localhost:9092
+pdp-endpoint: grpc://localhost:9094
+authstar-max-object-size: 5242880
+notp-max-packet-size: 16777216
 ```
 
 <details>
@@ -109,18 +108,11 @@ output:
 
 ```json
 {
-  "endpoints": {
-    "zap": "grpc://localhost:9091",
-    "pap": "grpc://localhost:9092",
-    "pdp": "grpc://localhost:9094"
-  },
-  "language": "cedar",
-  "authstar": {
-    "max_object_size": 5242880
-  },
-  "notp": {
-    "max_packet_size": 16777216
-  }
+  "zap_endpoint": "grpc://localhost:9091",
+  "pap_endpoint": "grpc://localhost:9092",
+  "pdp_endpoint": "grpc://localhost:9094",
+  "authstar_max_object_size": 5242880,
+  "notp_max_packet_size": 16777216
 }
 ```
 

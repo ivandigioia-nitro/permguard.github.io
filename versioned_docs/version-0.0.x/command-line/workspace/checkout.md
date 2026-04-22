@@ -63,7 +63,7 @@ output:
       "is_head": true,
       "ref": "refs/remotes/origin/273165098782/fd1ac44e4afa4fc4beec622494d3175a",
       "ledger_id": "fd1ac44e4afa4fc4beec622494d3175a",
-      "ledger_uri": "origin/273165098782/branches"
+      "ledger_uri": "origin/273165098782/root"
     }
   ]
 }

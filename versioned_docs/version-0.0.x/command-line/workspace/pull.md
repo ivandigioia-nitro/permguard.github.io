@@ -64,30 +64,30 @@ output:
 {
   "code_entries": [
     {
-      "code_id": "schema",
-      "code_type": "schema",
-      "language_version": "*",
-      "language_type": "schema",
+      "codeid": "schema",
+      "codetype": "schema",
+      "languageversion": "*",
+      "languagetype": "schema",
       "language": "cedar-json",
       "oid": "bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y",
       "oname": "schema",
       "type": "blob"
     },
     {
-      "code_id": "assign-role-branch",
-      "code_type": "policy",
-      "language_version": "*",
-      "language_type": "policy",
+      "codeid": "assign-role-branch",
+      "codetype": "policy",
+      "languageversion": "*",
+      "languagetype": "policy",
       "language": "cedar-json",
       "oid": "bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4",
       "oname": "assign-role-branch",
       "type": "blob"
     },
     {
-      "code_id": "view-branch-inventory-auditors",
-      "code_type": "policy",
-      "language_version": "*",
-      "language_type": "policy",
+      "codeid": "view-branch-inventory-auditors",
+      "codetype": "policy",
+      "languageversion": "*",
+      "languagetype": "policy",
       "language": "cedar-json",
       "oid": "bafyreicvh2o5kwyfsgjq5qcdxse4dkkbbvzxknxjim6ibbc35kmw27fbne",
       "oname": "view-branch-inventory-auditors",

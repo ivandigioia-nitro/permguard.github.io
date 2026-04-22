@@ -74,7 +74,9 @@ output:
       "created_at": "2024-08-25T14:50:38.003Z",
       "updated_at": "2024-08-25T14:50:38.003Z",
       "zone_id": 273165098782,
-      "name": "root"
+      "name": "root",
+      "kind":"policy",
+      "ref":""
     }
   ]
 }
@@ -115,7 +117,52 @@ output:
       "created_at": "2024-08-25T14:50:38.003Z",
       "updated_at": "2024-08-25T15:10:22.003Z",
       "zone_id": 273165098782,
-      "name": "v1.1"
+      "name": "v1.1",
+      "kind":"policy",
+      "ref":""
+    }
+  ]
+}
+```
+
+</details>
+
+## Delete a Ledger
+
+The `permguard authz ledgers delete` command allows to delete an existing ledger.
+
+```bash
+permguard authz ledgers delete --zone-id 273165098782 --ledger-id 668f3771eacf4094ba8a80942ea5fd3f
+```
+
+output:
+
+```bash
+668f3771eacf4094ba8a80942ea5fd3f: root
+```
+
+<details>
+  <summary>
+    JSON Output
+  </summary>
+
+```bash
+permguard authz ledgers delete --zone-id 273165098782 --ledger-id 668f3771eacf4094ba8a80942ea5fd3f --output json
+```
+
+output:
+
+```json
+{
+  "ledgers": [
+    {
+      "ledger_id": "668f3771eacf4094ba8a80942ea5fd3f",
+      "created_at": "2024-08-25T14:50:38.003Z",
+      "updated_at": "2024-08-25T14:50:38.003Z",
+      "zone_id": 273165098782,
+      "name": "root",
+      "kind":"policy",
+      "ref":""
     }
   ]
 }
@@ -156,7 +203,7 @@ output:
       "created_at": "2024-12-25T08:49:14.467Z",
       "updated_at": "2024-12-25T08:49:14.467Z",
       "zone_id": 727373447775,
-      "name": "727373447775",
+      "name": "root",
       "kind": "policy",
       "ref": "bafyreiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
     }
@@ -165,3 +212,9 @@ output:
 ```
 
 </details>
+
+The `--page` and `--size` flags can be used to paginate the results.
+
+```bash
+permguard authz ledgers list --zone-id 273165098782 --page 2 --size 50
+```
