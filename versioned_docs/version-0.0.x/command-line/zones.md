@@ -9,7 +9,7 @@ description: Command reference for the `zones` command of the Permguard CLI.
 Using the `zones` command, it is possible to manage Zones on the remote server.
 
 ```text
-This command manages zones.
+This command manages zones on the remote server.
 
 Usage:
   permguard zones [flags]
@@ -22,7 +22,8 @@ Available Commands:
   update      Update a remote zone
 
 Flags:
-  -h, --help   help for zones
+  -h, --help          help for zones
+      --zone-id int   filter results by zone ID across all subcommands
 
 Global Flags:
   -o, --output string            output format (default "terminal")

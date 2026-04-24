@@ -31,7 +31,7 @@ Global Flags:
 The output from your current version of Permguard may differ from the example provided on this page.
 :::
 
-<!-- updated: OID example values changed from hex SHA256 to CIDv1 (dag-cbor, sha2-256) format -->
+<!-- updated: OID example values changed from hex SHA256 to CIDv1 (dag-cbor, sha2-256) format; code_entries field names updated to snake_case; partition field added -->
 
 ## Pull a ledger
 
@@ -64,39 +64,53 @@ output:
 {
   "code_entries": [
     {
-      "codeid": "schema",
-      "codetype": "schema",
-      "languageversion": "*",
-      "languagetype": "schema",
+      "code_id": "schema",
+      "code_type": "schema",
       "language": "cedar-json",
+      "language_type": "schema",
+      "language_version": "0.0",
       "oid": "bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y",
       "oname": "schema",
+      "partition": "/",
       "type": "blob"
     },
     {
-      "codeid": "assign-role-branch",
-      "codetype": "policy",
-      "languageversion": "*",
-      "languagetype": "policy",
+      "code_id": "assign-role-branch",
+      "code_type": "policy",
       "language": "cedar-json",
+      "language_type": "policy",
+      "language_version": "0.0",
       "oid": "bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4",
       "oname": "assign-role-branch",
+      "partition": "/",
       "type": "blob"
     },
     {
-      "codeid": "view-branch-inventory-auditors",
-      "codetype": "policy",
-      "languageversion": "*",
-      "languagetype": "policy",
+      "code_id": "view-branch-inventory-auditors",
+      "code_type": "policy",
       "language": "cedar-json",
+      "language_type": "policy",
+      "language_version": "0.0",
       "oid": "bafyreicvh2o5kwyfsgjq5qcdxse4dkkbbvzxknxjim6ibbc35kmw27fbne",
       "oname": "view-branch-inventory-auditors",
+      "partition": "/",
+      "type": "blob"
+    },
+    {
+      "code_id": "",
+      "code_type": "0",
+      "language": "0",
+      "language_type": "0",
+      "language_version": "0",
+      "oid": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "oname": "manifest",
+      "partition": "/",
       "type": "blob"
     }
   ],
-  "local_commit_id": "bafyreifhg6mludogohvmaxa57fd6lrmhgeerc77bjhvj7schkves4ni2i4",
-  "local_commits_count": 1,
-  "remote_commit_id": "bafyreifhg6mludogohvmaxa57fd6lrmhgeerc77bjhvj7schkves4ni2i4",
+  "local_commit_oid": "bafyreifhg6mludogohvmaxa57fd6lrmhgeerc77bjhvj7schkves4ni2i4",
+  "local_commits_count": 0,
+  "remote_commit_oid": "bafyreifhg6mludogohvmaxa57fd6lrmhgeerc77bjhvj7schkves4ni2i4",
   "remote_commits_count": 1
 }
 ```

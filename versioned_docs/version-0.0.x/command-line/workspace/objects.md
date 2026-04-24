@@ -17,13 +17,13 @@ Available Commands:
   cat         Cat the object content
 
 Flags:
-      --all       all object types
-      --blob      objects of the blob type
-      --code      include objects from the code store
-      --commit    objects of the commit type
+      --all       include all object types in the results
+      --blob      filter results to include only objects of type 'blob'
+      --code      include objects from the code store in the results
+      --commit    filter results to include only objects of type 'commit'
   -h, --help      help for objects
-      --objects   include objects from the object store
-      --tree      objects of the tree type
+      --objects   include objects from the object store in the results  
+      --tree      filter results to include only objects of type 'tree'
 
 Global Flags:
   -o, --output string            output format (default "terminal")
@@ -55,11 +55,12 @@ permguard objects cat bafyreihpc3vupfos5yqnlakgbrpjx3ztbkwwlir5zetbwo3y6uhzpwtxu
 
 Additional flags allow to control the output format:
 
-| Flag         | Description                                                |
-| ------------ | ---------------------------------------------------------- |
-| `--raw`      | Display the raw, unprocessed content                       |
-| `--content`  | Display only the processed content                         |
-| `--frontend` | Display the content formatted using the front-end language |
+| Flag        | Description                                              |
+| ----------- | -------------------------------------------------------- |
+| `--content` | Display only the processed content                       |
+| `--human`   | Display the content in human-readable format             |
+| `--inspect` | Display all object fields as a raw tabular inspect view  |
+| `--raw`     | Display the raw, unprocessed content                     |
 
 ```bash
 permguard objects cat bafyreihpc3vupfos5yqnlakgbrpjx3ztbkwwlir5zetbwo3y6uhzpwtxuy --content
@@ -78,15 +79,15 @@ output:
 ```bash
 Your workspace objects:
 
-  - bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y blob schema
-  - bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote commit
-  - bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4 blob assign-role-branch
-  - bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety commit
-  - bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa blob view-branch-inventory-auditor
-  - bafyreifwrtexm2qpujli77u57wioq4cl7ww5r3ydeb5baxkrljgclu7u4q blob assign-role-branch
-  - bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu tree
-  - bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4 commit
-  - bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri tree
+	- bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y blob schema
+	- bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote commit
+	- bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4 blob assign-role-branch
+	- bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety commit
+	- bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa blob view-branch-inventory-auditor
+	- bafyreifwrtexm2qpujli77u57wioq4cl7ww5r3ydeb5baxkrljgclu7u4q blob assign-role-branch
+	- bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu tree
+	- bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4 commit
+	- bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri tree
 
 total 9, commit 3, tree 2, blob 4
 ```

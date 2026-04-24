@@ -83,6 +83,12 @@ output:
 {
   "commits": [
     {
+      "author": "",
+      "author_timestamp": "2024-12-24T16:51:57+01:00",
+      "committer": "",
+      "committer_timestamp": "2024-12-24T16:51:57+01:00",
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "oid": "bafyreigicp6inahqx7bny4q3hayvfyldwgx34vlg55z6dt3mpgdc6xqtm4",
       "predecessor": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
       "profiles": [
@@ -90,15 +96,15 @@ output:
           "key": "ztas_app/",
           "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
         }
-      ],
-      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
-      "message": "",
-      "author": "",
-      "author_timestamp": "2024-12-24T16:51:57+01:00",
-      "committer": "",
-      "committer_timestamp": "2024-12-24T16:51:57+01:00"
+      ]
     },
     {
+      "author": "",
+      "author_timestamp": "2024-12-24T16:50:04+01:00",
+      "committer": "",
+      "committer_timestamp": "2024-12-24T16:50:04+01:00",
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "oid": "bafyreidxucxtwamjuk6g4ziku2yon2qhtm7jnjbcsbrcwyecm7fj2vzety",
       "predecessor": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
       "profiles": [
@@ -106,29 +112,23 @@ output:
           "key": "ztas_app/",
           "tree": "bafyreigyugkg5ywg2fxgwmfbnz3b25tmi332255jbwzneurdssifdbazri"
         }
-      ],
-      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
-      "message": "",
-      "author": "",
-      "author_timestamp": "2024-12-24T16:50:04+01:00",
-      "committer": "",
-      "committer_timestamp": "2024-12-24T16:50:04+01:00"
+      ]
     },
     {
+      "author": "",
+      "author_timestamp": "2024-12-24T16:48:58+01:00",
+      "committer": "",
+      "committer_timestamp": "2024-12-24T16:48:58+01:00",
+      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+      "message": "",
       "oid": "bafyreiag4keidsdw5gyiyox3mqylddufxmsjdp2wpjaga66yuv5672bote",
-      "predecessor": "bafyreiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "predecessor": "",
       "profiles": [
         {
           "key": "ztas_app/",
           "tree": "bafyreigecbyyfwelaip4ynreku26h7pwu5qqg5fm3s23lcbzlejdrhpfwu"
         }
-      ],
-      "manifest": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
-      "message": "",
-      "author": "",
-      "author_timestamp": "2024-12-24T16:48:58+01:00",
-      "committer": "",
-      "committer_timestamp": "2024-12-24T16:48:58+01:00"
+      ]
     }
   ]
 }

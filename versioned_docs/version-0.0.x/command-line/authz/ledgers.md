@@ -9,19 +9,21 @@ description: Command reference for the `ledgers` command of the Permguard CLI.
 Using the `ledgers` command, it is possible to manage Ledgers on the remote server.
 
 ```text
- Usage:
+This command manages ledgers on the remote server.
+
+Usage:
   permguard authz ledgers [flags]
   permguard authz ledgers [command]
 
 Available Commands:
-  create      Create a ledger
-  delete      Delete a ledger
-  list        List ledgers
-  update      Update a ledger
+  create      Create a remote ledger
+  delete      Delete a remote ledger
+  list        List remote ledgers
+  update      Update a remote ledger
 
 Flags:
-      --zone-id int    zone id
   -h, --help          help for ledgers
+      --zone-id int   zone id
 
 Global Flags:
   -o, --output string            output format (default "terminal")
@@ -205,7 +207,7 @@ output:
       "zone_id": 727373447775,
       "name": "root",
       "kind": "policy",
-      "ref": "bafyreiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "ref":""
     }
   ]
 }

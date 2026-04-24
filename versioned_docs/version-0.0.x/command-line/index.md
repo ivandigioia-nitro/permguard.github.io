@@ -22,7 +22,6 @@ To view a list of commands available in the current Permguard version, users can
 
 Available Commands:
   apply       Apply the plan to the remote ledger
-  zones       Manage zones on the remote server
   authz       Manage ledgers on the remote server
   checkout    Check out the contents of a remote ledger to the local permguard workspace
   clone       Clone a remote ledger to the local permguard workspace
@@ -39,6 +38,7 @@ Available Commands:
   remote      Manage remote server for tracking and interaction
   validate    Validate the local state for consistency and correctness
   version     Show the version details
+  zones       Manage zones on the remote server
 
 Flags:
   -h, --help                     help for permguard

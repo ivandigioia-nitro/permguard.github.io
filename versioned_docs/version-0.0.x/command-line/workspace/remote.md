@@ -101,12 +101,12 @@ output:
 {
   "remotes": [
     {
-      "zap_port": 9091,
-      "zap_server": "localhost",
       "pap_port": 9092,
       "pap_server": "localhost",
       "remote": "origin",
-      "scheme": "grpcs"
+      "scheme": "grpcs",
+      "zap_port": 9091,
+      "zap_server": "localhost"
     }
   ]
 }
@@ -132,7 +132,9 @@ output:
 
 ```bash
 Your workspace configured remotes:
-  - origin
+
+	- origin
+
 ```
 
 <!-- markdownlint-disable MD033 -->
@@ -151,11 +153,11 @@ output:
 {
   "remotes": [
     {
-      "zap_port": 9091,
-      "zap_server": "localhost",
       "pap_port": 9092,
       "pap_server": "localhost",
-      "remote": "origin"
+      "remote": "origin",
+      "zap_port": 9091,
+      "zap_server": "localhost"
     }
   ]
 }
@@ -176,3 +178,31 @@ output:
 ```bash
 Remote origin has been removed.
 ```
+
+<!-- markdownlint-disable MD033 -->
+<details>
+  <summary>
+    JSON Output
+  </summary>
+
+```bash
+permguard remote remove origin --output json
+```
+
+output:
+
+```json
+{
+  "remotes": [
+    {
+      "pap_port": 9092,
+      "pap_server": "localhost",
+      "remote": "origin",
+      "zap_port": 9091,
+      "zap_server": "localhost"
+    }
+  ]
+}
+```
+
+</details>

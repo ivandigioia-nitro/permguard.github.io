@@ -44,7 +44,7 @@ output:
 ```bash
 Your workspace configured ledgers:
 
-  - *origin/273165098782/root
+	- *origin/273165098782/root
 
 ```
 
@@ -64,9 +64,9 @@ output:
   "ledgers": [
     {
       "is_head": true,
-      "ref": "refs/remotes/origin/273165098782/fd1ac44e4afa4fc4beec622494d3175a",
       "ledger_id": "fd1ac44e4afa4fc4beec622494d3175a",
-      "ledger_uri": "origin/273165098782/root"
+      "ledger_uri": "origin/273165098782/root",
+      "ref": "refs/remotes/origin/273165098782/fd1ac44e4afa4fc4beec622494d3175a"
     }
   ]
 }

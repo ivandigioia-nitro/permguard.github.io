@@ -31,7 +31,7 @@ Global Flags:
 The output from your current version of Permguard may differ from the example provided on this page.
 :::
 
-<!-- updated: OID example values changed from hex SHA256 to CIDv1 (dag-cbor, sha2-256) format -->
+<!-- updated: plan JSON fields changed to integer IDs, added partition/datatype/code_files, manifest blob now in plan -->
 
 ## Plan the local state
 
@@ -46,14 +46,11 @@ output:
 ```bash
 Initiating the planning process for ledger head/273165098782/fd1ac44e4afa4fc4beec622494d3175a.
 Planning process completed successfully.
-The following changes have been identified and are ready to be applied:
-
-  + bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa view-branch-inventory-auditor
-  + bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4 assign-role-branch
-  + bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y schema
-
-unchanged 0, created 3, modified 0, deleted 0
-
+  + bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa /view-branch-inventory-auditor
+  + bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4 /assign-role-branch
+  + bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y /schema
+  + bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy /manifest
+unchanged 0, created 4, modified 0, deleted 0
 Run the 'apply' command to apply the changes.
 ```
 
@@ -70,39 +67,81 @@ output:
 
 ```json
 {
+  "code_files": [
+    {
+      "oid": "bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa",
+      "oname": "view-branch-inventory-auditor",
+      "partition": "/",
+      "path": "view-branch-inventory-auditor.cedar",
+      "section": 1
+    },
+    {
+      "oid": "bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4",
+      "oname": "assign-role-branch",
+      "partition": "/",
+      "path": "assign-role-branch.cedar",
+      "section": 2
+    },
+    {
+      "oid": "bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y",
+      "oname": "schema",
+      "partition": "/",
+      "path": "schema.json",
+      "section": 3
+    }
+  ],
   "plan": {
     "create": [
       {
+        "partition": "/",
         "oname": "view-branch-inventory-auditor",
         "otype": "blob",
         "oid": "bafyreiekc2jsaebluqu3j56auwu43zxjx4vm4yzvv45vpmizobyyybnkqa",
+        "datatype": 0,
         "codeid": "view-branch-inventory-auditor",
-        "codetype": "policy",
-        "language": "cedar-json",
-        "languagetype": "policy",
-        "languageversion": "*",
+        "codetypeid": 2,
+        "languageid": 2,
+        "languagetypeid": 2,
+        "languageversionid": 0,
         "state": "create"
       },
       {
+        "partition": "/",
         "oname": "assign-role-branch",
         "otype": "blob",
         "oid": "bafyreibfs6sumu5qsgel6yj2ettkmqiaugyumex75u55qvmn7qsn2y5dj4",
+        "datatype": 0,
         "codeid": "assign-role-branch",
-        "codetype": "policy",
-        "language": "cedar-json",
-        "languagetype": "policy",
-        "languageversion": "*",
+        "codetypeid": 2,
+        "languageid": 2,
+        "languagetypeid": 2,
+        "languageversionid": 0,
         "state": "create"
       },
       {
+        "partition": "/",
         "oname": "schema",
         "otype": "blob",
         "oid": "bafyreiaapbtxeti2vaasc3ms3dii5urgtjk6jfkxllhld5dm33mfsqkz5y",
+        "datatype": 0,
         "codeid": "schema",
-        "codetype": "schema",
-        "language": "cedar-json",
-        "languagetype": "schema",
-        "languageversion": "*",
+        "codetypeid": 1,
+        "languageid": 2,
+        "languagetypeid": 1,
+        "languageversionid": 0,
+        "state": "create"
+      },
+      {
+        "partition": "/",
+        "oname": "manifest",
+        "otype": "blob",
+        "oid": "bafyreig7lbj54eovjli534dwju3i3zce3vyldzyvdd7uvk2vtjro3xtqzy",
+        "datatype": 1,
+        "codeid": "",
+        "codetypeid": 0,
+        "languageid": 0,
+        "languagetypeid": 0,
+        "languageversionid": 0,
         "state": "create"
       }
     ],
